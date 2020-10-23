@@ -328,7 +328,7 @@ if(first()){
     holoColor(A,vec(255))
     holoScale(A,vec(1.5,1.5,2))
     holoModel(A,"models/titus's_propper_model_pack_2.4/propper/buttons/pushbutton.mdl")
-    holoPos(A,E:toWorld(vec(2.92,0,0.78)))
+    holoPos(A,E:toWorld(vec(2.92,0,0.78+FixZfuck)))
     holoAng(A,E:toWorld(ang(0,0,0)))
     holoEntity(A):setSubMaterial(2,"models/proppertextures/aluminum")
     holoEntity(A):setSubMaterial(3,"models/proppertextures/acrylic_red")
