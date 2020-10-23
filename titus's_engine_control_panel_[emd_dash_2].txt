@@ -17,6 +17,7 @@ if(first()){
     
     # Holos
     local BoltScale = vec(0.04,0.3,0.04)
+    local FixZfuck = 0.1
 
     A = 1
     holoCreate(A)
@@ -249,7 +250,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/isolationswitch")
-    holoPos(A,holoEntity(Switch):toWorld(vec(0.5,0,0.28)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(0.5,0,0.28+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0)))
     
     # Headlight Control
@@ -316,7 +317,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/headlightcontrol")
-    holoPos(A,holoEntity(Switch):toWorld(vec(0.5,0,0.28)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(0.5,0,0.28+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0)))
     
     # Engine Stop
@@ -339,7 +340,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/emrgfuelcutoffandenginestop")
-    holoPos(A,E:toWorld(vec(2.8,-0.1,0.78)))
+    holoPos(A,E:toWorld(vec(2.8,-0.1,0.78+FixZfuck)))
     holoAng(A,E:toWorld(ang(0,0,0)))
     
     # Light Switches
@@ -386,7 +387,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/platform")
-    holoPos(A,holoEntity(Switch):toWorld(vec(-1.3,0,-0.1)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(-1.3,0,-0.1+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0)))
     
     A = 35
@@ -431,7 +432,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/engroom")
-    holoPos(A,holoEntity(Switch):toWorld(vec(-1.3,0,-0.1)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(-1.3,0,-0.1+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0)))
     
     A = 39
@@ -476,7 +477,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/rear")
-    holoPos(A,holoEntity(Switch):toWorld(vec(-1.15,0,-0.1)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(-1.15,0,-0.1+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0)))
     
     A = 43
@@ -521,7 +522,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/front")
-    holoPos(A,holoEntity(Switch):toWorld(vec(-1.15,0,-0.1)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(-1.15,0,-0.1+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0)))
     
     A = 47
@@ -566,7 +567,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/rear")
-    holoPos(A,holoEntity(Switch):toWorld(vec(-1.15,0,-0.1)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(-1.15,0,-0.1+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0)))
     
     A = 51
@@ -611,7 +612,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/front")
-    holoPos(A,holoEntity(Switch):toWorld(vec(-1.15,0,-0.1)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(-1.15,0,-0.1+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0)))
     
     A = 55
@@ -621,7 +622,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/class")
-    holoPos(A,E:toWorld(vec(1.07,-6,0.78)))
+    holoPos(A,E:toWorld(vec(1.07,-6,0.78+FixZfuck)))
     holoAng(A,E:toWorld(ang(0,0,0)))
         
     A = 56
@@ -631,7 +632,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/number")
-    holoPos(A,E:toWorld(vec(1.07,-8,0.78)))
+    holoPos(A,E:toWorld(vec(1.07,-8,0.78+FixZfuck)))
     holoAng(A,E:toWorld(ang(0,0,0)))
         
     # Engine Status Lights
@@ -668,7 +669,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/governorshutdown5th")
-    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0)))
     
     # Hot Eng
@@ -703,7 +704,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/hoteng")
-    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0)))
     
     # No Batt
@@ -738,7 +739,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/nobattchargeornopower")
-    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0)))
     
     # Turbo Aux Pump
@@ -773,7 +774,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/turboauxpump")
-    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0)))
     
     # Ground Fault
@@ -808,7 +809,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/hvgndfault")
-    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0)))
     
     # Test
@@ -843,7 +844,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/test")
-    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0))) 
     
     # Filter Blower CB Open
@@ -878,7 +879,7 @@ if(first()){
     holoScale(A,vec(0.6))
     holoModel(A,"plane")
     holoMaterial(A,"titus/filterblowercircuitopen")
-    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03)))
+    holoPos(A,holoEntity(Switch):toWorld(vec(1.1,0,0.03+FixZfuck)))
     holoAng(A,holoEntity(Switch):toWorld(ang(0,0,0))) 
     
     if(HighVoltageSticker){
@@ -889,7 +890,7 @@ if(first()){
         holoScale(A,vec(0.32))
         holoModel(A,"plane")
         holoMaterial(A,"models/proppertextures/highvoltage")
-        holoPos(A,E:toWorld(vec(-2.3,-10.5,0.78)))
+        holoPos(A,E:toWorld(vec(-2.3,-10.5,0.78+FixZfuck)))
         holoAng(A,E:toWorld(ang(0,0,0)))
     }
     
